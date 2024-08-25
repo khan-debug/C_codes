@@ -1,0 +1,69 @@
+#include<stdio.h>
+#include<conio.h>
+int cardis(float x,float y);
+int cardis(float x,float y){
+	float z=(x/100)*y;
+   return x+z;	
+}
+int discount(float x,float y);
+int discount(float x,float y){
+	float z=(x/100)*y;
+   return x-z;
+  // printf("price is %f",g);
+
+	
+}
+
+int main()
+{
+	int a;
+	int b;
+	int c;
+	float d;
+	float sum = 0;
+	printf("enter list of items:");
+	scanf("%d", &a);
+	for (b = 0; b < a; b++)
+	{
+		printf("enter price:");
+		scanf("%d", &c);
+		sum = sum + c;
+
+		
+	}
+	printf("sum is :%f", sum);
+printf("\nenter discount percentage:");
+scanf("%f",&d);
+float x=sum;
+float y=d;
+ float g=discount(x,y);
+    printf("\nprice is: %f",g);
+ printf("\nselect payment method\npress 1 for payment by cash:\npress 2 for to card payment:");
+ int e;
+ scanf("%d",&e);
+ if(e==2)
+ {
+ 	printf("press 1 UBL with 5percent discount:\npress 2 MEEZAN with 7percent discount:");
+ 	e=0;
+ 	scanf("%d",&e);
+ 	if(e==1){
+ 		x=g;
+ 		y=5;
+ 	float h=discount(x,y);
+ 	printf("price after discount is:%f",h);
+ 		
+	 }
+	 else{
+	x=g;
+ 		y=7;
+ 	float h=discount(x,y);
+ 	printf("price after discount is:%f",h);
+	 }
+ }
+ printf("\ngst will be 2percent");
+float h=x;
+ y=2;
+ float j=cardis(x,y);
+ printf("\nprice after gst is:%f",j);
+ 
+}

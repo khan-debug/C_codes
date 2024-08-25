@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+
+//function declaration
+int add(int,int);
+
+//function defination
+int add(int x,int y)
+{
+	int ans = x + y;
+	printf("%d + %d = %d\n",x,y,ans);
+}
+
+
+int main()
+{
+	printf("Hello\n");
+	//fucntion invoke
+	add(3,6);
+	printf("Pf Lab students\n");
+	add(9, 7);
+	int num1, num2;
+	printf("Enter first number");
+	scanf("%d", &num1);
+	printf("Enter second number");
+	scanf("%d", &num2);
+	add(num1,num2);
+}

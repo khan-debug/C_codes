@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int i;
+	int j;
+	int b;
+	int z;
+	int ar[7];
+	for( i=0;i<7;i++)
+	{
+		scanf("%d",&ar[i]);
+	}
+	for( j=0;j<7;j++)
+	{
+		for( z=0;z<7-j-1;z++)
+		{
+			if(ar[z]>ar[z+1])
+			{
+				b=ar[z];
+				ar[z]=ar[z+1];
+				ar[z+1]=b;
+			}
+		}
+	
+	}
+		for(int j=0;j<7;j++)
+		{
+			printf("%d",ar[j]);
+		}
+ return 0;
+}

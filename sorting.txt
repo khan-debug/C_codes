@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int aee[]={7,8,3,2,9};
+	int i;
+	int j;
+	
+	for(i=0;i<4;i++)
+	{
+		for(j=0;j<5-i-1;j++)
+		{
+			if(aee[j]>aee[j+1])
+			{
+			int temp;
+			temp=aee[j];
+			aee[j]=aee[j+1];
+			aee[j+1]=temp;
+		}
+		
+		}
+	}
+	for(i=0;i<5;i++){
+		printf("%d",aee[i]);
+	}
+
+}

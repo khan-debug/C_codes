@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int i=0;
+	struct student
+	{
+		char name[25];
+		char gender;
+		int rollnumber;
+		float marks;
+	};
+	
+	struct student std[10];
+	
+
+
+	
+	for(i=0;i<5;i++){
+		printf("enter name:");
+	scanf("%s", &std[i].name);
+	printf("enter gender:");
+	scanf("%s", &std[i].gender);
+	printf("enter roll number:");
+	scanf("%d", &std[i].rollnumber);	
+	printf("enter marks:");
+	scanf("%f", &std[i].marks);	
+}
+	for(i=0;i<5;i++){
+	printf("\nname is :%s",std[i].name);
+	printf("\ngender is :%c",std[i].gender);
+	printf("\nroll number is :%d",std[i].rollnumber);
+	printf("\nmarks is :%f",std[i].marks);
+
+printf("\n");
+}
+
+return 0;
+}

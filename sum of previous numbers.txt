@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a , b , d , e  , f;
+	printf("enter 0 to stop");
+	printf("\nenter first number:");
+	scanf("%d", &a);
+	printf("enter second number:");
+	scanf("%d", &b);
+    int c = a + b;
+	printf("sum is:%d", c);
+	do
+	{
+		
+		printf("\nenter number:");
+		scanf("%d", &d);
+		 e = c + d;
+		printf("sum is:%d",e);
+		c = e ;
+	} while (d != 0);
+
+}
